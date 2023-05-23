@@ -1,6 +1,6 @@
 package com.perlera.parcial01.ui.food.viewmodell
 
-import androidx.lifecycle.MutableLiveData
+import  androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider.AndroidViewModelFactory.Companion.APPLICATION_KEY
 import androidx.lifecycle.viewmodel.initializer
@@ -36,6 +36,8 @@ class FoodViewModel(private val repository: FoodRepository): ViewModel() {
             origin.value.toString(),
         )
 
+
+
         addFood(newfood)
         status.value = FOOD_CREATED
     }
@@ -61,7 +63,7 @@ class FoodViewModel(private val repository: FoodRepository): ViewModel() {
                 FoodViewModel(app.foodRepository)
             }
         }
-        const val FOOD_CREATED = "Movie created"
+        const val FOOD_CREATED = "Food created"
         const val WRONG_DATA = "Wrong Data"
         const val BASE_STATE = ""
     }

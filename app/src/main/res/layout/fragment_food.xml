@@ -4,6 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.food.FoodFragment">
 
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.perlera.parcial01.ui.food.viewmodell.FoodViewModel" />
+    </data>
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

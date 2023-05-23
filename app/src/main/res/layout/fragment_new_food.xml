@@ -4,6 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.food.newfood.NewFoodFragment">
 
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.perlera.parcial01.ui.food.viewmodell.FoodViewModel" />
+    </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -30,6 +35,7 @@
             android:layout_marginEnd="@dimen/small_gap"
             android:ems="10"
             android:hint="Origin"
+            android:text="@={viewmodel.name}"
             android:inputType="text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -44,12 +50,14 @@
             android:layout_marginEnd="@dimen/small_gap"
             android:ems="10"
             android:hint="Name"
+            android:text="@={viewmodel.origin}"
             android:inputType="text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
         <Button
+            android:onClick="@{()-> viewmodel.createFood()}"
             android:id="@+id/action_submit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
