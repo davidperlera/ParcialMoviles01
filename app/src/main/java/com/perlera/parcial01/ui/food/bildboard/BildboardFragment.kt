@@ -1,4 +1,4 @@
-package com.perlera.parcial01.ui.food
+package com.perlera.parcial01.ui.food.bildboard
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

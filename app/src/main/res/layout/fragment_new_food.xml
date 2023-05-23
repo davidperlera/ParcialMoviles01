@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.food.newfood.NewFoodFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/black">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_gap"
+            android:text="Add Food"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/origin_edittext"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="@dimen/small_gap"
+            android:layout_marginTop="@dimen/small_gap"
+            android:layout_marginEnd="@dimen/small_gap"
+            android:ems="10"
+            android:hint="Origin"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_edittext" />
+
+        <EditText
+            android:id="@+id/name_edittext"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="@dimen/small_gap"
+            android:layout_marginTop="@dimen/small_gap"
+            android:layout_marginEnd="@dimen/small_gap"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <Button
+            android:id="@+id/action_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_gap"
+            android:backgroundTint="@color/black"
+            android:text="SUBMIT"
+            app:layout_constraintEnd_toEndOf="@+id/origin_edittext"
+            app:layout_constraintStart_toStartOf="@+id/origin_edittext"
+            app:layout_constraintTop_toBottomOf="@+id/origin_edittext" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
