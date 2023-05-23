@@ -13,14 +13,16 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_blue_light"
+        android:backgroundTint="@color/bc">
 
         <TextView
             android:id="@+id/food_name_info_textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="150dp"
-            android:text="TextView"
+            android:text="@={viewmodel.name}"
             android:textSize="50sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -31,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:text="TextView"
+            android:text="@={viewmodel.origin}"
             android:textSize="50sp"
             app:layout_constraintEnd_toEndOf="@+id/food_name_info_textview"
             app:layout_constraintStart_toStartOf="@+id/food_name_info_textview"

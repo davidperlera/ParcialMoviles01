@@ -36,8 +36,6 @@ class FoodViewModel(private val repository: FoodRepository): ViewModel() {
             origin.value.toString(),
         )
 
-
-
         addFood(newfood)
         status.value = FOOD_CREATED
     }

@@ -56,7 +56,11 @@ class BildboardFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        setRecyclerView(view)
+
+
         binding.actionToCreateFood.setOnClickListener{
+            viewmodel.clearData()
             findNavController().navigate(R.id.action_bildboardFragment_to_newFoodFragment)
         }
     }
